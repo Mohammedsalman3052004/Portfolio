@@ -1,0 +1,547 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html, body {
+   height: 100vh;
+   width: 100%;
+   overflow-x: hidden;
+   color: white;
+   background-color: #242424;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #ffbb38; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #da910b; 
+}
+.main{
+    position: relative;
+}
+.float{
+    position: absolute; 
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.122); */
+    /* background-color:/ #ffbb38; */
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.368);
+} 
+.float span{
+    display: inline-block;
+}
+.heading .a:nth-child(1) {
+    color: #ffbb38; 
+}
+.heading .b:nth-child(10) {
+    color: #ffbb38; 
+}
+.heading{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "Ubuntu", serif;
+    margin-top: -5%;
+}
+.page1{
+    /* background-color: #211A1D; */
+    background-color: #242424;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 55px;
+    align-items: center;
+}
+.nav-content{
+    padding: 20px 35px;
+}
+.nav-heading{
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Ubuntu", serif;
+    /* font-weight: 300 */
+}
+.nav-sub{
+    display: flex;
+    gap: 2rem;
+}
+.nav-sub a{
+    text-decoration: none;
+    color: white;
+    font-family: "Ubuntu", serif;
+    font-weight: 300
+}
+.nav-h3:hover{
+    color: #ffbb38;
+}
+
+.btn-a{
+    /* position: relative; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    margin-top: 4%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 150px;
+    border: 2px solid #ffbb38;
+    border-radius: 2rem;
+}
+.btn-a:hover{
+    color: black;
+    background-color: #ffbb38;
+}
+.about-me{
+    color: white;
+    font-size: 1.2rem;
+}
+.main-content{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+.page1-heading{
+    margin-left: 4%;
+    margin-top: 2%;
+    height: 100vh;
+    width: 50%;
+}
+.pg1-hello{
+    font-size: 1.5rem;
+    color: #ffbb38;
+}
+.pg1-salman{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    color: #F2B84A;
+}
+.pg1-salman span{
+    color: white;
+}
+.profession{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+}
+.page1-photo{
+    height: 100vh;
+    width: 50%;
+}
+.page1-img{
+    position: absolute;
+    background-size: cover;
+    object-fit: cover;
+    right: -15%;
+    top:3%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+    /* z-index: 1; */
+}
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #242424;
+    position: relative;
+    margin-top: -9.5%;
+}
+.page2-content{
+    display: flex;
+    justify-content: space-between;
+}
+.page2-img{
+    height: 100vh;
+    width: 50%;
+    /* margin-left: 6.3rem;
+    margin-top: 8rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-photo{
+    height: 23rem;
+    width: 23rem;
+}
+.page2-aboutme{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.page2-aboutme p{
+    font-family: "Playwrite GB S", cursive;
+    margin-top: 2rem;
+    margin-left: 25px;
+}
+.resume-download{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border: 2px solid #ffbb38;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 150px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.resume-download:hover{
+    background-color: #ffbb38;
+    color: #242424;
+}
+.abt{
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-left: 25px;
+    color: white;
+}
+.abt span{
+    color: #ffbb38;
+}
+.table{
+    margin-top: 2rem;
+}
+.td-head{
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Ubuntu", serif;
+}
+.td-sub{
+    color: rgba(255, 255, 255, 0.652);
+    font-size: 1.3rem;
+    font-family: "Ubuntu", serif;
+}
+.t2{
+    margin-top: 1.5rem;
+}
+.gfg {
+    border-collapse: separate;
+    border-spacing: 25px 22px;
+}
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #242424;
+}
+.page3-main{
+    height: 100vh;
+    width: 100%;
+}
+.education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    padding: 3rem 0;
+    color: #fff;
+}
+.education span{
+    color: #ffbb38;
+}
+.education-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plain{
+    height: 100vh;
+    width: 50%;
+}
+.plain img{
+    margin-left: 25%;
+    margin-top: 7%;
+}
+.bor-plain{
+    height: 15rem;
+    width: 1rem;
+    background-color: red;
+}
+.edu-con{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+.year{
+    /* background-color: rgba(255, 255, 255, 0.652); */
+    display: inline-block;
+    padding: 3px 3px;
+    border: 2px solid #ffbb38;
+    border-radius: 2rem;
+    color: #ffbb38;
+    margin-top: 1rem;
+}.stages{
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.pro{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 3.5rem;
+}
+.aeroplain{
+    position: absolute;
+}
+.aero{
+    margin-left: 185%;
+    margin-bottom: -130%;
+}
+
+
+.page4{
+    height: 100vh;
+    width: 100%;
+}
+.page4-content{
+    height: 100vh;
+    width: 100%;
+}
+.skill{
+    padding: 4.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+}
+.skill span{
+    color: #ffbb38;
+}
+
+
+.flex-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-flow: row nowrap;
+    margin-left: 8rem;
+    row-gap: 5rem;
+    text-align: center;
+}
+  
+  .single-chart {
+    width: 53%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #ffbb38;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #ffbb38;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+
+.svg-h{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.page5{
+    height: 100vh;
+    width: 100%;
+}
+
+.exprience{
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    font-size: 3rem;
+}
+.exprience span{
+    color: #ffbb38;
+}
+.expri{
+    margin-left: 45%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ex-date{
+    font-size: 1rem;
+    border: 2px solid #ffbb38;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 5px 5px;
+}
+.ex-title{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+}
+.ex-sub{
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.ex-p{
+    margin-top: 1rem;
+}
+.p2{
+    margin-top: 4rem;
+}
+.i-tag{
+    /* position: absolute; */
+}
+.i-i{
+    position: absolute;
+    background-color: #ffbb38;
+    font-size: 2rem;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    margin-left: 30rem;
+    margin-top: -25rem;
+}
+.i-i2{
+    position: absolute;
+    background-color: #ffbb38;
+    font-size: 2rem;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    margin-left: 30rem;
+    margin-top: -10rem;
+    z-index: 1;
+}
+/* .straight{
+    position: absolute;
+    font-size: 10rem;
+    margin-left: 30.5rem;
+    margin-top: -9.1rem;
+    width: 5px;
+    z-index: 5;
+    color: rgba(255, 255, 255, 0.652);
+}
+.straight1{
+    position: absolute;
+    font-size: 10rem;
+    margin-left: 30.5rem;
+    margin-top: -24rem;
+    width: 5px;
+    z-index: 5;
+    color: rgba(255, 255, 255, 0.652);
+} */
+
+.footer{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.103);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    position: sticky;
+}
+.footer-main{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-i{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.footer-a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffbb38;
+}
